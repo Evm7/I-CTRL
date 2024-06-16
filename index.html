@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta property="og:title" content="I-CTRL: Imitation to Control Humanoid Robots Through Constrained Reinforcement Learning"/>
+  <meta property="og:url" content="https://evm7.github.io/I-CTRL/"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <title>I-CTRL: Imitation to Control Humanoid Robots Through Constrained Reinforcement Learning
+</title>
+  
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+  <link rel="icon" href="static/figures/icon2.png">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+  
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://evm7.github.io">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://evm7.github.io/ECHO/">
+            ECHO
+          </a>
+	    <a class="navbar-item" href="https://evm7.github.io/UnsH2R/">
+            ImitationNet
+          </a>
+          <a class="navbar-item" href="https://evm7.github.io/HOI4ABOT_page/">
+            HOI4ABOT
+          </a>
+           <a class="navbar-item" href="https://evm7.github.io/UNIMASKM-page/">
+            UNIMASK-M
+          </a>
+          <a class="navbar-item" href="https://evm7.github.io/icvae-page/">
+            IntentionCVAE
+          </a>
+          <a class="navbar-item" href="https://evm7.github.io/HOIGaze-page/">
+            HOIGaze
+          </a>
+            <a class="navbar-item" href="https://evm7.github.io/2CHTR-page/">
+            2CHTR
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+<section class="publication-header">
+  <div class="hero-body">
+    <div class="container is-max-widescreen">
+      <!-- <div class="columns is-centered"> -->
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">I-CTRL: Imitation to Control Humanoid Robots Through Constrained Reinforcement Learning</h1>
+          <div class="is-size-3 publication-authors">
+            Under Submission, 2024
+          </div>
+        </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="publication-author-block">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><a href="https://www.tuwien.at/en/etit/ict/asl/team/yashuai-yan" target="_blank">Yashuai Yan*</a>,</span>
+           <span class="author-block"><a href="https://evm7.github.io/" target="_blank">Esteve Valls Mascaro*</a>,</span>
+	   <span class="author-block"><a href="https://evm7.github.io/" target="_blank">Tobias Egle</a>,</span>
+            <span class="author-block"><a href="https://www.tuwien.at/etit/ict/asl/team/dongheui-lee" target="_blank">Dongheui Lee</a>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Technische Universitaet Wien (TUWien), German Aerospace Center (DLR)</span> 
+            <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+          </div>
+          
+
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2405.08726" target="_blank"
+                  class="external-link button is-normal is-rounded">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+
+              
+              <!-- PDF Link. -->
+<!--              <span class="link-block">-->
+<!--                <a href="static/source/ADDHEREPDF.pdf" target="_blank"-->
+<!--                  class="external-link button is-normal is-rounded">-->
+<!--                  <span class="icon">-->
+<!--                    <i class="fas fa-file-pdf"></i>-->
+<!--                  </span>-->
+<!--                  <span>Paper</span>-->
+<!--                </a>-->
+<!--              </span>-->
+<!--                            </span>-->
+              <!-- </span> -->
+              <!-- Colab Link. -->
+<!--              <span class="link-block">-->
+<!--                <a href="ADD HERE THE CODE" target="_blank"-->
+<!--                class="external-link button is-normal is-rounded">-->
+<!--                <span class="icon">-->
+<!--                  <i class="fab fa-github"></i>-->
+<!--                </span>-->
+<!--                <span>Code</span>-->
+<!--              </a>-->
+<!--             </span>-->
+
+<!--              <span class="link-block">-->
+<!--                <a href="ADD HERE REPLICATE IF NEEDED" target="_blank"-->
+<!--                class="external-link button is-normal is-rounded">-->
+<!--                <span class="icon">-->
+<!--                  <i class="fas fa-rocket"></i>-->
+<!--                </span>-->
+<!--                <span>Demo</span>-->
+<!--              </a>-->
+<!--              </span>-->
+              <!-- </span> -->
+              <!-- Colab Link. -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 
+<section class="hero is-small">
+  <!~~ <div class="hero-body"> ~~>
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!~~ <div id="results-carousel" class="carousel results-carousel"> ~~>
+      <div class="container">
+      <div class="item">
+      <div class="column is-centered has-text-centered">
+        <img src="static/figures/teaser.png" alt="UNIMASKM"/>
+      </div>
+
+    </div>
+  </div>
+ <!~~  </div> ~~>
+  </div>
+  </div>
+ <!~~  </div> ~~>
+</section>
+ -->
+
+  <section class="hero is-small">
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="container">
+        <div class="item">
+          <p style="margin-bottom: 30px">
+ 
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+          <source src="static/figures/videos/overview.mp4"
+          type="video/mp4">
+        </video>
+        </p>
+        </div>
+    </div>
+  </div>
+  </div>
+  </div>
+</section>
+    
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+Humanoid robots have the potential to mimic human motions with high visual fidelity, yet translating these motions into practical, physical execution remains a significant challenge. Existing techniques in the graphics community often prioritize visual fidelity over physics-based feasibility, posing a significant challenge for deploying bipedal systems in practical applications. This paper addresses these issues by introducing a constrained reinforcement learning algorithm to produce physics-based high-quality motion imitation onto legged humanoid robots that enhance motion resemblance while successfully following the reference human trajectory. Our framework, Imitation to Control Humanoid Robots Through Constraint Reinforcement Learning (I-CTRL), reformulates motion imitation as a constrained refinement over non-physics-based retargeted motions. I-CTRL excels in motion imitation with simple and unique rewards that generalize across four robots. Moreover, our framework can follow large-scale motion datasets with a unique RL agent. The proposed approach signifies a crucial step forward in advancing the control of bipedal robots, emphasizing the importance of aligning visual and physical realism for successful motion imitation.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+
+      <div class="column is-centered has-text-centered">
+        <img src="static/figures/overview.png" alt="Motivation of our model"/>
+      </div>    
+  </div>
+</div>
+</div>
+</section>
+
+
+
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+         <h2 class="title is-3">How does it work?</h2> 
+        <div class="content has-text-justified">
+          <p>
+First, we train <a href="https://evm7.github.io/UnsH2R/">ImitationNet</a> to retarget human motions into different robots. ImitationNet provides stylistic robot poses that resemble the original human but are not feasible for executing in the physical world. Then, we train our whole-body controller using constrained reinforcement learning to refine those reference poses based on current observation from the physics simulator IsaacGym. .
+          </p>
+        <div class="columns is-centered has-text-centered">
+            <div class="item">
+          <p style="margin-bottom: 30px">
+<!--
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+          <source src="static/figures/MDM-page.mp4"
+          type="video/mp4">
+        </video>
+ --><br><br>
+        </p>
+        </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+    
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+
+      <div class="column is-centered has-text-centered">
+        <img src="static/figures/modeloverview.png" alt="Architecture of our I-CTRL"/>
+      </div>    
+  </div>
+</div>
+</div>
+</section>
+
+
+      <section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Human Motion Retargeting into Bipedal Robots</h2>
+          <p>
+            Performance of our RL agent in translating a dynamic human dance motion into four different humanoid robots. The video imitates `a person doing a miscellaneous dance' in BRUCE, Unitree-H1, JVRC-1, and ATLAS robots.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section> 
+
+    
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
+          
+      <div class="column is-centered has-text-centered">
+        <p><b> “ATLAS Robot”</b></p>
+                <video poster="" id="tree" autoplay controls muted loop height="100%">
+                  <source src="static/figures/videos/dancing/atlas_dance.mp4" type="video/mp4">
+                </video>
+      </div>
+      <div class="column is-centered has-text-centered">
+        <p><b> “H1 Robot”</b></p>
+                <video poster="" id="tree" autoplay controls muted loop height="100%">
+                  <source src="static/figures/videos/dancing/H1_dance.mp4" type="video/mp4">
+                </video>
+      </div>
+      <div class="column is-centered has-text-centered">
+        <p><b> “JVRC Robot”</b></p>
+                <video poster="" id="tree" autoplay controls muted loop height="100%">
+                  <source src="static/figures/videos/dancing/jvrc_dance.mp4" type="video/mp4">
+                </video>
+      </div>
+        <div class="column is-centered has-text-centered">
+        <p><b> “BRUCE Robot.”</b></p>
+                <video poster="" id="tree" autoplay controls muted loop height="100%">
+                  <source src="static/figures/videos/dancing/bruce_dance.mp4" type="video/mp4">
+                </video>
+      </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+
+   
+
+
+  <section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Comparison with the baselines</h2>
+          <p>
+	Comparison of the performance of DeepMimic and AMP versus our approach. Here, the reference refers to the retargeted robot motion from a real human walking using ImitationNet . The reference robot (green) ignores the physics laws for the visualization purpose.
+         </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section> 
+
+
+      <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+      <div class="column is-centered has-text-centered">
+              <video poster="" id="tree" autoplay controls muted loop height="100%">
+                <source src="static/figures/videos/baselines/comparison.mp4" type="video/mp4">
+              </video>
+      </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+    
+<section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+@article{yan2023unsupervised,
+  title={ImitationNet: Unsupervised human-to-robot motion retargeting via shared latent space},
+  author={Yan, Yashuai and Mascaro, Esteve Valls and Lee, Dongheui},
+  journal={arXiv preprint arXiv:2309.05310},
+  year={2023}
+}</code></pre>
+    </div>
+</section>
+
+
+
+
+<footer class="footer">
+ <!--  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+      href="https://homes.cs.washington.edu/~kpar/nerfies/videos/nerfies_paper.pdf">
+      <i class="fas fa-file-pdf"></i>
+    </a>
+    <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+      <i class="fab fa-github"></i>
+    </a>
+  </div> -->
+  <div class="columns is-centered">
+    <div class="column is-8">
+      <div class="content">
+        <p>
+          This website is licensed under a <a rel="license"
+          href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+        Commons Attribution-ShareAlike 4.0 International License</a>.
+      </p>
+      <p>
+        Website source code based on the <a href="https://nerfies.github.io/"> Nerfies</a> project page. If you want to reuse their <a
+        href="https://github.com/nerfies/nerfies.github.io">source code</a>, please credit them appropriately.
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+</footer>
+
+  </body>
+  </html>
