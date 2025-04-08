@@ -1,4 +1,4 @@
-I-CTRL: Imitation to Control Humanoid Robots Through Constrained Reinforcement Learning
+[I-CTRL: Imitation to Control Humanoid Robots Through Constrained Reinforcement Learning](https://ieeexplore.ieee.org/document/10870445)
 
 
 Webpage for "I-CTRL: Imitation to Control Humanoid Robots Through Constrained Reinforcement Learning
